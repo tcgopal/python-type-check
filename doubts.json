@@ -1,0 +1,25 @@
+[
+  {
+    "Column No.": 15,
+    "Field Name": "DATE_OF_SUPPLY",
+    "Data Type": "DATE (YYYYMMDD)",
+    "Constraint": "Conditional",
+    "Field Description": "The date when the supply is performed\nFor credit and debit notes , it acts as the original supply date. "
+  },
+  {
+    "Column No.": 16,
+    "Field Name": "SUPPLY_FROM_DATE",
+    "Data Type": "DATE (YYYYMMDD)",
+    "Constraint": "Conditional",
+    "Field Description": "The \"Start Date\" for Continuous Supplies. In cases where Summary Invoice is generated, the first date of the period of Summary Invoice",
+    "Comments": "Mandatory only for Summary Documents"
+  },
+  {
+    "Column No.": 17,
+    "Field Name": "SUPPLY_END_DATE",
+    "Data Type": "DATE (YYYYMMDD)",
+    "Constraint": "Conditional",
+    "Field Description": "The \"End Date\" for Continuous Supplies. In cases where Summary Invoice is generated, the last date of the period of Summary Invoice",
+    "Comments": "Mandatory only for Summary Documents"
+  }
+]
